@@ -1,4 +1,8 @@
-### toolshed
+
+
+<div>
+    <img src="toolshed.png" width="120" alt="toolshed Logo">
+</div>
 
 This is where I dump small tools I build while learning new things.
 
@@ -7,15 +11,20 @@ This is where I dump small tools I build while learning new things.
 | File | Language | What it does |
 | ------ | ---------- | -------------- |
 | `filehashgenerator.go` | Go | Computes MD5, SHA-1, SHA-256, SHA-512 hashes for a file |
+| `dnslookup.py` | Python | Performs DNS lookups for a domain |
 | `caesar.rb` | Ruby | Encodes and decodes text using a Caesar cipher |
 | `counter.rb` | Ruby | Counts lines, words, and characters in a file |
 | `passwordgenerator.py` | Python | Generates secure random passwords |
+
 
 **usage**
 
 Each tool is self-contained. Run with `--help` for usage details.
 
 ```bash
+
+python3 dnslookup.py shaivarth.com
+
 go run filehashgenerator.go /path/to/file
 
 ruby caesar.rb encode 3 "Hello elephant" 
@@ -24,5 +33,6 @@ ruby caesar.rb encode 3 "Hello elephant"
 ruby counter.rb notes.txt 
 [use any of your filess] :)
 
-python passwordgenerator.py
+python3 passwordgenerator.py
+
 ```
