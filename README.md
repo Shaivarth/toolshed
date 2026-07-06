@@ -10,6 +10,7 @@ This is where I dump small tools I build while learning new things.
 
 | File | Language | What it does |
 | ------ | ---------- | -------------- |
+| `portscanner.py` | Python | Scans TCP ports on a host |
 | `filehashgenerator.go` | Go | Computes MD5, SHA-1, SHA-256, SHA-512 hashes for a file |
 | `dnslookup.py` | Python | Performs DNS lookups for a domain |
 | `caesar.rb` | Ruby | Encodes and decodes text using a Caesar cipher |
@@ -17,11 +18,15 @@ This is where I dump small tools I build while learning new things.
 | `passwordgenerator.py` | Python | Generates secure random passwords |
 
 
+
+
 **usage**
 
 Each tool is self-contained. Run with `--help` for usage details.
 
 ```bash
+
+python3 portscanner.py scanme.nmap.org 1 65535
 
 python3 dnslookup.py shaivarth.com
 
